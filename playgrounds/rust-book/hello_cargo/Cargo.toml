@@ -1,0 +1,36 @@
+# Cargo is Rust's build tool and package manager. To create a new Cargo project,
+# use the "cargo new" command. For example, use "cargo new hello_cargo" to
+# create a new Cargo project called hello_cargo. This will create a new
+# directory called hello_cargo with a Cargo.toml and main.rs file inside. A git
+# repository is also created if the project directory is not already within one.
+
+# The Cargo.toml file is a TOML file containing Cargo's manifest.
+
+# The package table contains information for packaging the project.
+[package]
+name = "hello_cargo" # The name of the package.
+version = "0.1.0" # The version of the package.
+edition = "2021" # The Rust edition to use when compiling the package.
+
+# The dependencies table contains a list of the project's dependencies. Packages
+# in Rust are referred to as crates.
+[dependencies]
+
+# To build a Cargo project, use the "cargo build" command. The resulting
+# executable is found in the target/debug/ directory. This command also updates
+# or creates the Cargo.lock file, which specifies exact versions of
+# dependencies. Do not edit the Cargo.lock file, as Cargo does so automatically.
+
+# To build and run a Cargo project in one step, use the "cargo run" command.
+# Cargo will automatically skip building the project if it doesn't need to.
+
+# To check a Cargo project for errors, use the "cargo check" command. This
+# allows you to quickly check your code without taking the time necessary to
+# compile the entire project.
+
+# To build for release, use the "--release" flag. The resulting executable is
+# found in the target/release/ directory instead of the target/debug/ directory.
+# For example, use "cargo build --release" to build the release version of a
+# Cargo project. While release builds take longer to compile, they contain
+# optimizations not found in development builds, making the resulting executable
+# run faster.
