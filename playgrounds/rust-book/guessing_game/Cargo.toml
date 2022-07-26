@@ -1,0 +1,19 @@
+[package]
+name = "guessing_game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# An external create will be used to generate random numbers. The "rand" crate
+# is a library crate, meaning it is used in other programs rather than executed
+# on its own. External crates that a project depends on are specified under the
+# dependencies table along with the version of the crate that should be used. By
+# default, Cargo follows schematic versioning so newer patch versions of crates
+# are automatically used if available.
+rand = "0.8.3"
+
+# Crates are fetched from Crates.io, a registry of open source Rust crates.
+# Building the project will automatically download the necessary crates from
+# Crates.io and save the exact versions used in the Cargo.lock file. While this
+# ensures reproducible builds, dependencies will need to be updated manually.
+# Use "cargo update" to update the Cargo.lock file based on the Cargo.toml file.
