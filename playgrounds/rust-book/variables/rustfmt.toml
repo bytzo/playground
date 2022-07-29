@@ -1,0 +1,5 @@
+# Rustfmt is a tool for formatting Rust code. Use the "cargo fmt" command to run
+# Rustfmt. The "rustfmt.toml" file is used to configure Rustfmt. For example,
+# the "hard_tabs" key controls whether tab characters or space characters should
+# be used for indentation.
+hard_tabs = true
